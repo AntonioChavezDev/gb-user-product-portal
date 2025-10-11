@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "start": "node backend/src/app.js",
-    "build:frontend": "cd frontend && npm install && ng build --configuration production",
+    "build:frontend": "cd frontend && npm install && npx ng build --configuration production",
     "start:dev": "nodemon backend/src/app.js",
     "deploy": "npm i && npm run build:frontend && npm run start"
   },
