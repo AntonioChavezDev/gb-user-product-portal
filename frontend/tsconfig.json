@@ -27,15 +27,12 @@
       "dom"
     ],
     "paths": {
-      "@core/*": [
-        "./src/app/core/*"
+      "@docs-components/*": [
+        "src/components/*"
       ],
-      "@shared/*": [
-        "./src/app/shared/*"
-      ],
-      "@views/*": [
-        "./src/app/views/*"
-      ],
+      "@core/*": ["src/app/core/*"],
+      "@shared/*": ["src/app/shared/*"],
+      "@views/*": ["src/app/views/*"],
     }
   },
   "angularCompilerOptions": {
