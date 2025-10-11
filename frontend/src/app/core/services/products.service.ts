@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { AbstractRestHttpService } from '../base/abstract-rest-http.service';
-import { Product } from '../models/product';
+import { AbstractRestHttpService } from '@core/base/abstract-rest-http.service';
+import { Product } from '@core/models/product';
 import { HttpClient } from '@angular/common/http';
 
 @Injectable({

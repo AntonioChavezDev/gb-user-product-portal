@@ -18,8 +18,8 @@ import {
   ReactiveFormsModule,
   Validators,
 } from '@angular/forms';
-import { User } from '../../../core/models/User';
-import { UsersService } from '../../../core/services/users.service';
+import { User } from '@core/models/User';
+import { UsersService } from '@core/services/users.service';
 import { RouterModule } from '@angular/router';
 
 @Component({

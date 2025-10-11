@@ -1,15 +1,13 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { LoginResponse } from '../interfaces/login-response.interface';
-import { LoginCredentials } from '../interfaces/login.interface';
+import { LoginResponse } from '@core/interfaces/login-response.interface';
+import { LoginCredentials } from '@core/interfaces/login.interface';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class AuthService {
-
-
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
   isAuthenticated(): boolean {
     return !!localStorage.getItem('authToken');
@@ -18,7 +16,7 @@ export class AuthService {
   getToken(): string | null {
     return localStorage.getItem('authToken');
   }
-  
+
   setLoginInfo(user: LoginResponse): void {
     localStorage.setItem('user', JSON.stringify(user.user));
     localStorage.setItem('authToken', user.token || '');
@@ -32,5 +30,4 @@ export class AuthService {
   login(cretendials: LoginCredentials) {
     return this.http.post<LoginResponse>('/api/auth', cretendials);
   }
-  
 }

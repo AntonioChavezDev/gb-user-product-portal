@@ -13,7 +13,7 @@ import {
   FormLabelDirective,
   RowComponent,
 } from '@coreui/angular';
-import { CategoriesService } from '../../../../core/services/categories.service';
+import { CategoriesService } from '@core/services/categories.service';
 import { Router } from '@angular/router';
 
 @Component({

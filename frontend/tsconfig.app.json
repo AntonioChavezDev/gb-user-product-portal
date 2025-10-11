@@ -10,7 +10,16 @@
     "paths": {
       "@docs-components/*": [
         "./src/components/*"
-      ]
+      ],
+      "@core/*": [
+        "./src/app/core/*"
+      ],
+      "@shared/*": [
+        "./src/app/shared/*"
+      ],
+      "@views/*": [
+        "./src/app/views/*"
+      ],
     }
   },
   "files": [

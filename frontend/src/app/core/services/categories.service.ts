@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-import { AbstractRestHttpService } from '../base/abstract-rest-http.service';
+import { AbstractRestHttpService } from '@core/base/abstract-rest-http.service';
 import { HttpClient } from '@angular/common/http';
-import { Category } from '../models/category';
+import { Category } from '@core/models/category';
 
 @Injectable({
   providedIn: 'root',

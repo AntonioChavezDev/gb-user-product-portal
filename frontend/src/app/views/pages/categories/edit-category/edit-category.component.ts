@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Category } from '../../../../core/models/category';
-import { CategoriesService } from '../../../../core/services/categories.service';
+import { Category } from '@core/models/category';
+import { CategoriesService } from '@core/services/categories.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import {
   FormBuilder,

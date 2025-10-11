@@ -4,9 +4,9 @@ import {
   TableAction,
   TableColumn,
   TableComponent,
-} from '../../../shared/components/table/table.component';
-import { Category } from '../../../core/models/category';
-import { CategoriesService } from '../../../core/services/categories.service';
+} from '@shared/components/table/table.component';
+import { Category } from '@core/models/category';
+import { CategoriesService } from '@core/services/categories.service';
 import { Router, RouterModule } from '@angular/router';
 
 @Component({

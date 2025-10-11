@@ -5,9 +5,9 @@ import {
   TableAction,
   TableColumn,
   TableComponent,
-} from '../../../shared/components/table/table.component';
-import { ProductsService } from '../../../core/services/products.service';
-import { Product } from '../../../core/models/product';
+} from '@shared/components/table/table.component';
+import { ProductsService } from '@core/services/products.service';
+import { Product } from '@core/models/product';
 
 @Component({
   selector: 'app-products',

@@ -19,8 +19,8 @@ import {
   RowComponent,
 } from '@coreui/angular';
 import { CommonModule } from '@angular/common';
-import { User } from '../../../../core/models/User';
-import { UsersService } from '../../../../core/services/users.service';
+import { User } from '@core/models/User';
+import { UsersService } from '@core/services/users.service';
 import { IconDirective } from '@coreui/icons-angular';
 
 @Component({
