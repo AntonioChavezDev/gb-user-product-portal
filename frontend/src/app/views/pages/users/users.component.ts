@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router, RouterModule } from '@angular/router';
-import { User } from '@core/models/User';
+import { User } from '@core/models/user';
 import { UsersService } from '@core/services/users.service';
 import {
   TableAction,

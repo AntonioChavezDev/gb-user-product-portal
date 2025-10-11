@@ -19,7 +19,7 @@ import {
   RowComponent,
 } from '@coreui/angular';
 import { CommonModule } from '@angular/common';
-import { User } from '@core/models/User';
+import { User } from '@core/models/user';
 import { UsersService } from '@core/services/users.service';
 import { IconDirective } from '@coreui/icons-angular';
 

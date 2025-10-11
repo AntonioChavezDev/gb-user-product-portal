@@ -18,7 +18,7 @@ import {
   ReactiveFormsModule,
   Validators,
 } from '@angular/forms';
-import { User } from '@core/models/User';
+import { User } from '@core/models/user';
 import { UsersService } from '@core/services/users.service';
 import { RouterModule } from '@angular/router';
 
