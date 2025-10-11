@@ -1,13 +1,12 @@
 import { Component } from '@angular/core';
 import { Router, RouterModule } from '@angular/router';
-import { ButtonDirective } from '@coreui/angular';
-import { User } from 'src/app/core/models/User';
-import { UsersService } from 'src/app/core/services/users.service';
+import { User } from '@core/models/User';
+import { UsersService } from '@core/services/users.service';
 import {
   TableAction,
   TableColumn,
   TableComponent,
-} from 'src/app/shared/components/table/table.component';
+} from '@shared/components/table/table.component';
 
 @Component({
   selector: 'app-users',
