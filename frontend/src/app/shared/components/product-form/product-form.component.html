@@ -1,0 +1,51 @@
+<form *ngIf="productForm" [formGroup]="productForm">
+  <c-row class="mb-3" *ngIf="isEditMode">
+    <label cLabel="col" cCol [sm]="2" for="ID"> ID </label>
+    <c-col [sm]="10">
+      <input cFormControl formControlName="id" id="ID" type="text" />
+    </c-col>
+  </c-row>
+  <c-row class="mb-3">
+    <label cLabel="col" cCol [sm]="2" for="name"> Name </label>
+    <c-col [sm]="10">
+      <input cFormControl formControlName="name" id="name" type="text" />
+    </c-col>
+  </c-row>
+  <c-row class="mb-3">
+    <label cLabel="col" cCol [sm]="2" for="Description"> Description </label>
+    <c-col [sm]="10">
+      <input
+        cFormControl
+        formControlName="description"
+        id="Description"
+        type="text"
+      />
+    </c-col>
+  </c-row>
+  <c-row class="mb-3">
+    <label cLabel="col" cCol [sm]="2" for="price"> Price </label>
+    <c-col [sm]="10">
+      <input
+        cFormControl
+        formControlName="price"
+        id="price"
+        type="number"
+        min="0"
+      />
+    </c-col>
+  </c-row>
+  <c-row class="mb-3">
+    <label cLabel="col" cCol [sm]="2" for="category"> Category </label>
+    <c-col [sm]="10">
+      <select
+        aria-label="Default select example"
+        cSelect
+        formControlName="category"
+      >
+        <option disabled [value]="null">Select a category</option>
+        <option *ngFor="let category of categories" [value]="category.name">{{ category.name }}</option>
+      </select>
+    </c-col>
+  </c-row>
+  <button cButton type="submit" (click)="onSubmit()">Submit</button>
+</form>

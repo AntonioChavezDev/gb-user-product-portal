@@ -1,0 +1,40 @@
+<table [class]="tableClass" cTable>
+  <thead>
+    <tr>
+      <th *ngFor="let col of columns" scope="col">{{ col.title }}</th>
+      <th *ngIf="actions" scope="col">Actions</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let row of data; let i = index">
+      <td *ngFor="let col of columns">
+        <ng-container [ngSwitch]="col.type || 'text'">
+          <ng-container *ngSwitchCase="'text'">
+            {{ row[col.field] }}
+          </ng-container>
+          <ng-container *ngSwitchCase="'number'">
+            {{ row[col.field] | currency : "USD" : "symbol" : "1.2-2" }}
+          </ng-container>
+          <ng-container *ngSwitchCase="'date'">
+            {{ row[col.field] | date : "medium" }}
+          </ng-container>
+          <ng-container *ngSwitchDefault>
+            {{ row[col.field] }}
+          </ng-container>
+        </ng-container>
+      </td>
+      <td *ngIf="actions">
+        <button
+          *ngFor="let action of actions"
+          cButton
+          [color]="action.color || 'primary'"
+          class="me-1"
+          (click)="action.onClick(row)"
+        >
+          <svg [cIcon]="icons[action.icon]" size="sm" title="List Icon"></svg>
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>

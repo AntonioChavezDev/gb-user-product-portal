@@ -1,0 +1,8 @@
+<h1>Edit Product</h1>
+<app-product-form
+  *ngIf="product"
+  [product]="product"
+  [isEditMode]="true"
+  (formSubmit)="onSubmit($event)"
+>
+</app-product-form>

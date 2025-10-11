@@ -1,0 +1,26 @@
+<form *ngIf="categoryForm" [formGroup]="categoryForm">
+  <c-row class="mb-3">
+    <label cLabel="col" cCol [sm]="2" for="ID"> ID </label>
+    <c-col [sm]="10">
+      <input cFormControl formControlName="id" id="ID" type="text" />
+    </c-col>
+  </c-row>
+  <c-row class="mb-3">
+    <label cLabel="col" cCol [sm]="2" for="name"> Name </label>
+    <c-col [sm]="10">
+      <input cFormControl formControlName="name" id="name" type="text" />
+    </c-col>
+  </c-row>
+  <c-row class="mb-3">
+    <label cLabel="col" cCol [sm]="2" for="Description"> Description </label>
+    <c-col [sm]="10">
+      <input
+        cFormControl
+        formControlName="description"
+        id="Description"
+        type="text"
+      />
+    </c-col>
+  </c-row>
+  <button cButton type="submit" (click)="edit()">Update</button>
+</form>
